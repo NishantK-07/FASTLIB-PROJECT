@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/profile.css">
+</head>
+<body>
+     {{>nav }}
+
+{{!-- {{users}} --}}
+
+        <div class="info">
+            <div class="profilelogo">
+                <img src="/static/img/899048ab0cc455154006fdb9676964b3.jpg" alt="" class="icon">
+                <h1>{{users.name}}</h1>
+                <p>SHARDA UNIVERSITY</p>
+
+            </div>
+                
+            
+            
+                <form class="supprtform">
+                    <div class="inputfield">
+                        <label for="name" class="centre">Name :</label>
+                       <h1>{{users.name}}</h1> <br>
+                    </div>
+                   
+                    <div class="inputfield">
+                        <label for="dname">DEPARTMENT:</label>
+                        <h1>{{users.department}}</h1><br>
+                    </div>
+                   
+                  <div class="inputfield">
+                    <label for="course">COURSE :</label>
+                    <h1>{{users.course}}</h1><br>
+                  </div>
+                   
+                 
+                    <div class="inputfield">
+                        <label for="section">SECTION :</label>
+                        <h1>{{users.section}}</h1><br>
+                    </div>
+                    <div class="inputfield">
+                        <label for="section">EMAIL :</label>
+                        <h1>{{users.shardaemail}}</h1><br>
+                    </div>
+                    <div class="inputfield">
+                        <label for="section">PHONE :</label>
+                        <h1>{{users.phone}}</h1><br>
+                    </div>
+                   
+                    
+                    
+    
+                </form>
+           
+        </div>
+        <hr>
+
+        <div class="issue" id="issue">
+            <form id="contact-form" action="./profile" method="post"  target="_self">
+                <label class="supform" for="name">BOOK NAME</label><br>
+                <input class="supform" type="text" id="name" name="name" placeholder="Your Full Name" required><br>
+                <label class="supform" for="isbn">ISBN NO</label><br>
+                <input class="supform" type="text" id="isbn" name="isbn" placeholder="Your Department" required><br>
+                
+                <button type="submit" id="submit"
+                    name="submit">ISSUE NOW</button>
+
+            </form></div>
+<hr>
+
+            <div class="issuehistory">
+                <h1>YOUR ISSUED BOOKS</h1>
+                <div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+			
+			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">S.NO.</a></div>
+			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">BOOKNAME</a></div>
+			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">ISBN NO</a></div>
+		</div>
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data">1</div>
+				<div class="table-data">CS IN PYTHON</div>
+				<div class="table-data">RH458D5</div>
+			</div>
+			<div class="table-row">
+				<div class="table-data">2</div>
+				<div class="table-data">ENGENNERING MATHEMATICS</div>
+				<div class="table-data">DKNF65</div>
+			</div>
+			<div class="table-row">
+				<div class="table-data">3</div>
+				<div class="table-data"> RADIOGRAPHY</div>
+				<div class="table-data">DKV54G</div>
+			</div>
+            <div class="table-row">
+			<div class="table-data">4</div>
+				<div class="table-data">OPERATION SYSTMES</div>
+				<div class="table-data">26KMV57</div>
+			</div>
+            <div class="table-row">
+				<div class="table-data">5</div>
+				<div class="table-data">NETWORKING</div>
+				<div class="table-data">FY457H</div>
+			</div>
+            <div class="table-row">
+				<div class="table-data">6</div>
+				<div class="table-data">ELECTRONICS AND CIRCUITS</div>
+				<div class="table-data">48DF155</div>
+			</div>
+            <div class="table-row">
+				<div class="table-data">7</div>
+				<div class="table-data">ENGENNERING DRAWING</div>
+				<div class="table-data">SFF55521</div>
+			</div>
+            <div class="table-row">
+				<div class="table-data">8</div>
+				<div class="table-data">SEMICONDUTOR</div>
+				<div class="table-data">25FGFH5</div>
+			</div>
+		</div>	
+	</div>
+</div>
+            </div>
+
+
+<hr>
+
+<div class="due">
+    <h1 class="hey">
+        YOUR DUE BOOKS
+    </h1>
+    <div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+		
+			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">S.NO.</a></div>
+			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">BOOKNAME</a></div>
+			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">ISBN NO</a></div>
+            
+		</div>
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data">1</div>
+				<div class="table-data">CS IN PYTHON</div>
+				<div class="table-data">RH458D5</div>
+               <a href="#issue" ><button id="renew" >RENEW</button></a>
+			</div>
+			<div class="table-row">
+				<div class="table-data">2</div>
+				<div class="table-data">ENGENNERING MATHEMATICS</div>
+				<div class="table-data">DKNF65</div>
+              <a href="#issue" ><button id="renew" >RENEW</button></a>
+			</div>
+			<div class="table-row">
+				<div class="table-data">3</div>
+				<div class="table-data">SEMICONDUTOR</div>
+				<div class="table-data">DKV54G</div>
+               <a href="#issue" ><button id="renew" >RENEW</button></a>
+			</div>
+            <div class="table-row">
+				<div class="table-data">4</div>
+				<div class="table-data">OPERATION SYSTMES</div>
+				<div class="table-data">26KMV57</div>
+                 <a href="#issue" ><button id="renew" >RENEW</button></a>
+			</div>
+            <div class="table-row">
+				<div class="table-data">5</div>
+				<div class="table-data">ENGENNERING DRAWING</div>
+				<div class="table-data">FY457H</div>
+                 <a href="#issue" ><button id="renew" >RENEW</button></a>
+			</div>
+            
+		</div>	
+	</div>
+</div>
+</div>
+<hr>
+<div class="overdue">
+	<h1 class="hey">
+		OVERDUE BOOKS
+	</h1>
+	<div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+		
+			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">S.NO.</a></div>
+			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">BOOKNAME</a></div>
+			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">ISBN NO</a></div>
+            
+		</div>
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data">1</div>
+				<div class="table-data">CS IN PYTHON</div>
+				<div class="table-data">RH458D5</div>
+               <a href="/payment" ><button id="renew" >PAY DUE</button></a>
+			</div>
+			<div class="table-row">
+				<div class="table-data">2</div>
+				<div class="table-data">ENGENNERING MATHEMATICS</div>
+				<div class="table-data">DKNF65</div>
+              <a href="/payment" ><button id="renew" >PAY DUE</button></a>
+			</div>
+			
+            
+		</div>	
+	</div>
+</div>
+
+        <hr>
+        {{>footer}}
+</body>
+</html>

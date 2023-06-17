@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FASTLIB</title>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styleform1.css">
+    <link rel="stylesheet" href="/static/css/styleform2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+<body>
+    
+
+<div class="container " id="blur">
+    <div class="inline2">
+    <img class="logo" src="/static/img/homeimg/Add a heading.jpg">
+    <p class="para">Experience the convenience and vast knowledge at your fingertips with our e-library management website. Discover a treasure trove of digital books, research materials, and resources. Explore user-friendly features, easy search options, and personalized recommendations. Embrace the future of learning and expand your horizons with our comprehensive FastLib E-library platform.</div>
+    
+            <div class="inline">
+            <button class="open-button1" onclick="openForm1()">SIGNIN AS STUDENT</button>
+            <button class="open-button2" onclick="openForm2()">SIGNIN AS ADMIN</button>
+            </div>
+
+            <div class="form-popup1" id="myForm">
+            <form action="/index" method="post" class="form-container">
+                <h1 class="h1">STUDENT LOGIN</h1>
+
+                <label for="email" class="p"><b>SHARDA EMAIL</b></label>
+                <input type="email" placeholder="Enter Email" name="email" >
+
+                <label for="psw" class="p"><b>SYSTEM ID</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" >
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+            </form>
+            </div>
+
+
+            <div class="form-popup2" id="myForm2">
+                <form action="/action_page.php" class="form-container">
+                <h1 class="h1">ADMIN LOGIN</h1>
+            
+                <label for="email" class="p"><b>ADMIN EMAIL</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw" class="p"><b>ADMIN ID</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+                </form>
+            </div>
+</div>
+<script>
+function openForm1() {
+ 
+  document.getElementById("myForm").style.display = "block";
+  
+}
+function openForm2() {
+  document.getElementById("myForm2").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm").style.display = "none";
+}
+function closeForm2() {
+  document.getElementById("myForm2").style.display = "none";
+}
+</script>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html> 
+
+
+
+
+

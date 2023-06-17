@@ -1,0 +1,138 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button1 {
+  background-color: #2949ec;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+justify-content: center;
+  
+}
+.open-button2{
+    background-color: #2949ec;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+/* The popup form - hidden by default */
+.form-popup1{
+  display: none;
+  position: fixed;
+  
+  top: 20px;
+  
+ 
+  border: 3px solid #f1f1f1;
+  border-radius: 8px;
+  z-index: 9;
+ left: 38%;
+ 
+}
+
+.form-popup2{
+    display: none;
+    position: fixed;
+
+    top:20px;
+    border: 3px solid #f1f1f1;
+    border-radius: 8px;
+    left: 38%;
+    z-index: 9;
+}
+.h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.p{
+text-align: center;
+width: 400px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 370px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button1:hover {
+  opacity: 1;
+}
+
+.inline{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.open-button1{
+    margin: 5px;
+}
+.open-button2{
+    margin: 5px;
+}
+
+.inline2{
+    display: flex;
+    margin-top: 80px;
+  border: 2px solid black;
+  border-radius: 5px;
+    height: 345px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffffff;
+   opacity: 0.8;
+}
+.logo{
+    width: 230px;
+    height: 120px;
+}
+.para{
+    width: 410px;
+    font-weight: 800;
+}
+.container#blur .active{
+  filter: blur(20px);
+}
